@@ -1,9 +1,12 @@
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    else:
-        return n * factorial(n - 1)
+# Input year
+year = int(input("Enter a year: "))
 
-num = int(input("Enter a number: "))
-result = factorial(num)
-print(f"The factorial of {num} is {result}")
+# Check if it's a leap year
+if year % 400 == 0:
+    print(year, "is a leap year.")
+elif year % 100 == 0:
+    print(year, "is not a leap year.")
+elif year % 4 == 0:
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
